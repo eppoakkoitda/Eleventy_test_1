@@ -1,0 +1,5 @@
+{
+  "./eleventy/_includes/room-with-a.vue": [
+    "\nmain {\n  font-family: sans-serif;\n}\n"
+  ]
+}

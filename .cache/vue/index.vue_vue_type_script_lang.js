@@ -1,6 +1,11 @@
 'use strict';
 
+var roomWithA = require('./_includes/room-with-a.js');
+
 var script = {
+  components: {
+    roomWithA
+  },
   data() {
     return {
       title: "Wow I'm So Excited To Use Vue In My Templates!",
