@@ -1,7 +1,6 @@
 {
   "vueToJs": {
-    "./eleventy/index.vue": "index.js",
-    "./eleventy/_includes/room-with-a.vue": "_includes/room-with-a.js"
+    "./eleventy/index.vue": "index.js"
   },
   "relationships": [
     {
@@ -13,23 +12,7 @@
       "to": "index.vue_vue_type_template_id_beee72d2_lang.js"
     },
     {
-      "from": "_includes/room-with-a.js",
-      "to": "_includes/room-with-a.vue_vue_type_template_id_149bdb2c_lang.js"
-    },
-    {
-      "from": "index.vue_vue_type_script_lang.js",
-      "to": "_includes/room-with-a.js"
-    },
-    {
       "from": "index.vue_vue_type_template_id_beee72d2_lang.js",
-      "to": "vue"
-    },
-    {
-      "from": "index.vue_vue_type_template_id_beee72d2_lang.js",
-      "to": "vue/server-renderer"
-    },
-    {
-      "from": "_includes/room-with-a.vue_vue_type_template_id_149bdb2c_lang.js",
       "to": "vue/server-renderer"
     }
   ]

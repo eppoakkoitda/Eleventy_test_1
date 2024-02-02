@@ -1,13 +1,21 @@
 'use strict';
 
-var roomWithA = require('./_includes/room-with-a.js');
-
 var script = {
-  components: {
-    roomWithA
+  mounted: function () {
+    this.loadHtml();
+  },
+  methods: {
+    loadHtml() {
+      fetch("./html/sample.html").then((res) => {
+        res.text().then((html) => {
+          this.htmlContent = html;
+        });
+      });
+    },
   },
   data() {
     return {
+      htmlcontent: "",
       title: "Wow I'm So Excited To Use Vue In My Templates!",
       listItems: [
         "This is the first item",
