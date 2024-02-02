@@ -1,18 +1,6 @@
-<template>
-  <div id="app"></div>
-  <article>
-    <h1>This is a test</h1>
-    <ul>
-      <li v-for="(listItem, index) in listItems" :key="index">
-        {{ listItem }}
-      </li>
-    </ul>
-  </article>
-  
-</template>
+'use strict';
 
-<script>
-export default {
+var script = {
   data() {
     return {
       title: "Wow I'm So Excited To Use Vue In My Templates!",
@@ -24,4 +12,5 @@ export default {
     };
   },
 };
-</script>
+
+module.exports = script;

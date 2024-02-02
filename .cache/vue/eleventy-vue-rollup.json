@@ -1,0 +1,19 @@
+{
+  "vueToJs": {
+    "./eleventy/index.vue": "index.js"
+  },
+  "relationships": [
+    {
+      "from": "index.js",
+      "to": "index.vue_vue_type_script_lang.js"
+    },
+    {
+      "from": "index.js",
+      "to": "index.vue_vue_type_template_id_beee72d2_lang.js"
+    },
+    {
+      "from": "index.vue_vue_type_template_id_beee72d2_lang.js",
+      "to": "vue/server-renderer"
+    }
+  ]
+}
