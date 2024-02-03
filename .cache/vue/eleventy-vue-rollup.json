@@ -1,18 +1,18 @@
 {
   "vueToJs": {
-    "./eleventy/index.vue": "index.js"
+    "./eleventy/test.vue": "test.js"
   },
   "relationships": [
     {
-      "from": "index.js",
-      "to": "index.vue_vue_type_script_lang.js"
+      "from": "test.js",
+      "to": "test.vue_vue_type_script_lang.js"
     },
     {
-      "from": "index.js",
-      "to": "index.vue_vue_type_template_id_beee72d2_lang.js"
+      "from": "test.js",
+      "to": "test.vue_vue_type_template_id_35ed005d_lang.js"
     },
     {
-      "from": "index.vue_vue_type_template_id_beee72d2_lang.js",
+      "from": "test.vue_vue_type_template_id_35ed005d_lang.js",
       "to": "vue/server-renderer"
     }
   ]

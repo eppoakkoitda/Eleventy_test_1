@@ -1,7 +1,7 @@
-const eleventyVue = require("@11ty/eleventy-plugin-vue"); // import the plugin
+// const eleventyVue = require("@11ty/eleventy-plugin-vue"); // import the plugin
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(eleventyVue); // tell Eleventy about the plugin
+  // eleventyConfig.addPlugin(eleventyVue); // tell Eleventy about the plugin
   eleventyConfig.addTransform("add-html-doctype", (content, outputPath) => {
     let doctype = "<!doctype html>";
     // If we’re writing to an HTML file and a Doctype does not already exist

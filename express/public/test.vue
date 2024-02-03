@@ -1,7 +1,6 @@
 <template>
   <article>
     <h1>This is a test</h1>
-    <div v-html="htmlContent"></div>
     <ul>
       <li v-for="(listItem, index) in listItems" :key="index">
         {{ listItem }}

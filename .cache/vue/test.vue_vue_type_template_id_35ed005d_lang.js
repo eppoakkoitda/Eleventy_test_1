@@ -5,11 +5,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var serverRenderer = require('vue/server-renderer');
 
 function ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<article${
-    serverRenderer.ssrRenderAttrs(_attrs)
-  }><h1>This is a test</h1><div>${
-    _ctx.htmlContent
-  }</div><ul><!--[-->`);
+  _push(`<article${serverRenderer.ssrRenderAttrs(_attrs)}><h1>This is a test</h1><ul><!--[-->`);
   serverRenderer.ssrRenderList($data.listItems, (listItem, index) => {
     _push(`<li>${serverRenderer.ssrInterpolate(listItem)}</li>`);
   });

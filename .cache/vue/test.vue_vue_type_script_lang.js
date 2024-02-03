@@ -3,7 +3,6 @@
 var script = {
   data() {
     return {
-      layout: "./includes/layout.html",
       title: "Wow I'm So Excited To Use Vue In My Templates!",
       listItems: [
         "This is the first item",
