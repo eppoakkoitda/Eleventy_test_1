@@ -56,12 +56,19 @@ const vue3_sfc_loader_options = {
     },
 };
 
+function getFileName(path) {
+    return path.split('/').pop().split('.').shift();
+}
+
 //Appコンポーネントをマウントするラッパー関数
-export default function MountSFC(vueFile, querySelector){
-    const app = Vue.createApp(
-        Vue.defineAsyncComponent(
-            () => loadModule(vueFile, vue3_sfc_loader_options)
-        ),
-    )
+export default function MountSFC(vueFilePath, querySelector="body"){
+    const app = Vue.createApp({});
+    if(Array.isArray(vueFilePath)){
+        vueFilePath.forEach( e => {
+            app.component(getFileName(e), Vue.defineAsyncComponent(() => loadModule(e, vue3_sfc_loader_options)));
+        });
+    }else{
+        app.component(getFileName(vueFilePath), Vue.defineAsyncComponent(() => loadModule(vueFilePath, vue3_sfc_loader_options)));
+    }
     app.mount(querySelector);
 }

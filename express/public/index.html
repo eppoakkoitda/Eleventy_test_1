@@ -5,18 +5,18 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://unpkg.com/htmx.org@1.9.10/dist/htmx.js"></script>
 		<title>test</title>
+        <script type="module">
+            import MountSFC from "./vue-sfc-loader.mjs"
+            MountSFC(["./compo_a_parent.vue","./compo_b.vue"]);
+        </script>
 	</head>
 	<body>
-        <div hx-get="/html/sample.html" hx-trigger="load"></div>
-        <div id="app"></div>
-        <div id="app2"></div>
-	</body>
-    <script type="module">
-        import MountSFC from "./vue-sfc-loader.mjs"
-        MountSFC("./test.vue", "#app");
-        MountSFC("./test.vue", "#app2");
-    </script>
-	
+        <div>
+            <compo_a_parent />
+        </div>
+        <div>
+            <compo_b />
+        </div>
+	</body>	
 </html>
